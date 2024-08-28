@@ -368,7 +368,7 @@
     display: block;
   }
   body.scroll #navigation #navbar-menu ul li a {
-    color: #1a1a1a;
+    color: var(--bodyTextColorWhite);
   }
   body.scroll #dark-mode-toggle svg path {
     fill: #000;
@@ -389,29 +389,30 @@
     align-items: center;
   }
   #navigation .background-color-div {
+    /* colored nav bar on scroll - default is dark */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--primaryDark);
     height: 0;
     transition: height .3s;
   }
   #navigation .container {
     max-width: 75rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
-  #navigation .logo {
+  /* #navigation .logo {
     margin-right: auto;
     height: 3.75rem;
     width: auto;
-  }
-  #navigation .logo img {
+  } */
+  /* #navigation .logo img {
     width: auto;
     height: 100%;
-  }
+  } */
   #navigation #navbar-menu ul {
     padding: 0;
     display: flex;
