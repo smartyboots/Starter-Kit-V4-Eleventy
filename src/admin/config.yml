@@ -10,14 +10,14 @@ media_folder: 'public/images/blog'
 public_folder: '/images/blog'
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'src/blog'
+  - name: 'news'
+    label: 'News'
+    folder: 'src/news'
     create: true
     slug: '{{pageName}}'
     fields:
-      - { label: 'Page-Name-with-dashes-only', name: 'pageName', widget: 'string' }
-      - { label: 'Blog Title', name: 'blogTitle', widget: 'string' }
+      - { label: 'news-and-updates', name: 'pageName', widget: 'string' }
+      - { label: 'Leftie Aubé - News and Updates', name: 'newsAndUpdates', widget: 'string' }
       - { label: 'Title Tag', name: 'titleTag', widget: 'string' }
       - { label: 'Description', name: 'blogDescription', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }

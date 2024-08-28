@@ -4,7 +4,8 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #hero {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: #333;
+    font-family: 'Archivo', 'Courier', serif;
     /* Centers button */
     text-align: center;
     /* changes on tablet */
@@ -100,18 +101,20 @@
     display: block;
   }
   #hero .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-size: clamp(2.4375rem, 6.4vw, 6rem);
     font-weight: 900;
+    letter-spacing: -.04em;
     line-height: 1.2em;
     text-align: center;
+    text-transform: uppercase;
     width: 100%;
     /* 32px - 40px */
-    margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
+    margin: 0 auto clamp(2rem, 2vw, 2.5rem) 0;
     color: var(--bodyTextColorWhite);
     position: relative;
   }
   #hero .cs-text {
+    font-family: 'ArchivoBlack-Regular';
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;

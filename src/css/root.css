@@ -4,12 +4,12 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #FFBA19;
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
-    --bodyTextColor: #4E4B66;
-    --bodyTextColorWhite: #FAFBFC;
-    --headerColor: #1a1a1a;
+    --primary: #FFFFFF;
+    --primaryShade: #C4C4C4;
+    --primaryDark: #333333;
+    --bodyTextColor: #333333;
+    --bodyTextColorWhite: #FFFFFF;
+    --headerColor: #333333;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -17,39 +17,38 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
-  /* roboto-regular - latin */
   @font-face {
-    font-family: 'Roboto';
+    font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-regular.woff') format('woff');
+    src: local(''), url('/assets/fonts/Archivo-Regular.ttf') format('truetype'), 
+    url('/assets/fonts/Archivo-Regular.ttf') format('truetype');
     
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-700 - latin */
   @font-face {
-    font-family: 'Roboto';
+    font-family: 'Archivo';
     font-style: normal;
     font-weight: 700;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-700.woff') format('woff');
-    
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(''),
+    url('/assets/fonts/Archivo-Regular.ttf') format('truetype'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/assets/fonts/Archivo-Regular.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-900 - latin */
   @font-face {
-    font-family: 'Roboto';
+    font-family: 'ArchivoBlack-Regular';
     font-style: normal;
     font-weight: 900;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-900.woff') format('woff');
+    src: local(''),
+            url('/assets/fonts/ArchivoBlack-Regular.ttf') format('truetype'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/ArchivoBlack-Regular.ttf') format('truetype');/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   body,
   html {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Archivo', Courier, serif;
     color: var(--bodyTextColor);
     overflow-x: hidden;
   }
@@ -76,6 +75,9 @@
   h6 {
     margin: 0;
     color: var(--headerColor);
+  }
+  h1 {
+    font-family: 'ArchivoBlack-Regular', Courier, serif;
   }
   p,
   li,
