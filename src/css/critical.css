@@ -11,7 +11,7 @@
     color: var(--bodyTextColorWhite);
     /* changes on tablet */
     padding: 0 1rem;
-    padding-bottom: 6.25rem;
+    /* padding-bottom: 6.25rem; */
     position: relative;
     z-index: 1;
     /* prevents overflow from the lines extending past the screen width */
@@ -106,93 +106,59 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  .services {
-    border-radius: 0.3125em;
-    margin: auto;
-    margin-top: -10.4375em;
-    position: relative;
-    z-index: 100;
-    background: #fff;
-    width: 90%;
-    max-width: 82.5em;
-    padding: 3.125em 1.25em;
-    border-top: 0.375em solid var(--primary);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    margin-bottom: 3.125em;
-  }
-  .services .card {
-    display: block;
-    width: 100%;
-    max-width: 22.3125em;
-    margin: auto;
-    margin-bottom: 3.125em;
-  }
-  .services .card:last-of-type {
-    margin-bottom: 0;
-  }
-  .services .card picture {
-    background: var(--primary);
-    width: 5.5em;
-    height: 5.5em;
+  #subscribe {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-bottom: 1.4375em;
-    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    padding: 2.5rem 1.5em;
   }
-  .services .card picture img {
-    width: 3em;
-    height: 3em;
-  }
-  .services .card h2 {
+  #subscribe h2 {
+    font-size: clamp(2rem, 15.5vw, 2.5em);
+    margin: 1em auto;
     text-align: center;
-    font-size: 2em;
-    line-height: 1.35em;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 0.65em;
   }
-  .services .card p {
-    text-align: center;
-    line-height: 1.33333333em;
+  #subscribe form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
     width: 100%;
-    opacity: .7;
   }
+  #subscribe form label {
+    width: 100%;
+    
+  }
+
 }
 /* Inbetween */
 @media only screen and (min-width: 768px) {
-  .services {
+  #subscribe {
     font-size: min(1.8vw, 1em);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
     width: 98%;
+    border: 1px solid green;
   }
-  .services .card {
-    margin: 0;
-    max-width: 20.3125em;
+  #subscribe form label {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    max-width: 1000px;
+    width: 90%;
+  }
+  #subscribe form button {
+    margin-left: 1.5em;
   }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  .services {
-    padding: 3.125em 5em;
-  }
-  .services .card {
-    max-width: 22.3125em;
+  #subscribe {
+    padding: 3.125em;
   }
 }
-/* Dark mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #services {
-    background: var(--medium);
-  }
-  body.dark-mode #services picture {
-    background: var(--primaryDark);
-  }
-  body.dark-mode #services h2 {
-    color: #fff;
-    font-weight: bold;
-  }
-}
+
