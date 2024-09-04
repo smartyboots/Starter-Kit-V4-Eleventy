@@ -3,7 +3,6 @@ layout: 'base.html'
 description: 'Leftie Aubé - News'
 metaTitle: 'Leftie Aubé - News'
 tagTitle: 'News'
-preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/news.css'
 permalink: 'news/'
 eleventyNavigation:
@@ -18,7 +17,7 @@ eleventyNavigation:
 
 <section id="int-hero">
     <h1 id="home-h">News</h1>
-    {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+   
 </section>
 
 <!-- ============================================ -->
@@ -38,6 +37,7 @@ eleventyNavigation:
         {%- for post in collections.post | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
+              {% if post.data.image %}
                 <picture class="blog-mainImage">
                     <img
                         src="{{ post.data.image }}"
@@ -45,26 +45,12 @@ eleventyNavigation:
                         width="795"
                         height="400"
                         decoding="async"
-/>
+                />
                 </picture>
+        {% endif %}
                 <!--Article Info-->
                 <div class="article-group">
-                    <div class="blog-authorGroup">
-                        <!--Author Image-->
-                        <picture class="blog-author-img">
-                            <img
-              src="/assets/svgs/profile.svg"
-              alt="house"
-              width="32"
-              height="32"
-              decoding="async"
-/>
-                        </picture>
-                        <span class="blog-author">{{ post.data.author }}</span>
-                        <span aria-hidden="true" class="blog-dot"></span>
-                        <!--Blog Date-->
-                        <span class="blog-date">{{ post.date | postDate }}</span>
-                    </div>
+                    
                     <h2 class="blog-h1">
                         {{ post.data.blogTitle }}
                     </h2>
