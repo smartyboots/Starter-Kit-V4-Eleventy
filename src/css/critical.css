@@ -98,7 +98,7 @@
     flex-wrap: nowrap;
   }
   #hero .cs-flex-group .cs-left {
-    max-width: 50%;
+    max-width: 65%;
     margin-right: 5em;
   }
 }

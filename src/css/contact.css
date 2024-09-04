@@ -25,18 +25,6 @@
   #cs-contact .cs-content {
     width: 100%;
   }
-  #cs-contact .cs-topper {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: left;
-    letter-spacing: .1em;
-    font-weight: 700;
-    color: var(--primary);
-    /* 8px - 12px */
-    margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
-    display: block;
-  }
   #cs-contact .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
@@ -61,17 +49,14 @@
   }
   #cs-contact .cs-right-section {
     position: relative;
-    height: 20rem;
+    height: auto;
     /* 24px - 40px top & bottom */
     /* 20px - 40px left & right */
     padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
-    border-radius: 0.5rem;
-    /* cuts off corners on img tag */
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   #cs-contact .cs-header {
     /* 16px - 20px */
@@ -79,74 +64,20 @@
     line-height: 1.2em;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: var(--bodyTextColorWhite);
+    /* color: var(--bodyTextColorWhite); */
     display: block;
   }
   #cs-contact .cs-link {
     /* 16px - 20px */
-    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-size: 1rem;
     line-height: 1.2em;
     text-decoration: none;
     margin-bottom: 1.25rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     display: block;
     position: relative;
   }
-  #cs-contact .cs-link:before {
-    /* Animated underline */
-    content: '';
-    width: 0%;
-    height: 2px;
-    /* current color of the parent */
-    background: currentColor;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.125rem;
-    left: 0;
-    transition: width .3s;
-  }
-  #cs-contact .cs-link:hover:before {
-    width: 100%;
-  }
-  #cs-contact .cs-link:last-of-type {
-    margin-bottom: 0;
-  }
-  #cs-contact .cs-block {
-    /* sends second address line to the bottom on its own line */
-    display: block;
-  }
-  #cs-contact .cs-bg-picture {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: transform .6s;
-  }
-  #cs-contact .cs-bg-picture:before {
-    /* background color overlay */
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #cs-contact .cs-bg-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-  }
+  /*  */
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
@@ -207,32 +138,6 @@
     max-width: 100%;
   }
   #cs-contact .cs-right-section {
-    height: 36.125rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cs-contact .cs-text,
-  body.dark-mode #cs-contact .cs-title {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact #cs-form label,
-  body.dark-mode #cs-contact #cs-form input,
-  body.dark-mode #cs-contact #cs-form textarea {
-    background-color: transparent;
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact #cs-form label::placeholder,
-  body.dark-mode #cs-contact #cs-form input::placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::placeholder {
-    /* lighten up the color of the text by 40%*/
-    filter: brightness(1.4);
-  }
-  body.dark-mode #cs-contact .cs-bg-picture {
-    background-color: #000;
-  }
-  body.dark-mode #cs-contact .cs-bg-picture img {
-    /* lets parent background-color bleed through and darken it */
-    opacity: .5;
+    height: auto;
   }
 }
