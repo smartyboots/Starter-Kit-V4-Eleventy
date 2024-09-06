@@ -108,16 +108,16 @@
 /* subscribe Mobile */
 @media only screen and (min-width: 0em) {
   #subscribe {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     margin: auto;
-    max-width: 1050px;
+    max-width: var(--max-width);
     position: relative;
-    z-index: 100;
     background: #fff;
     padding: 2.5rem 1.5em;
+    z-index: 100;
   }
   #subscribe h2 {
     font-size: clamp(2rem, 15.5vw, 2.5em);
@@ -133,7 +133,6 @@
   }
   #subscribe form label {
     width: 100%;
-    
   }
 
 }
@@ -155,11 +154,21 @@
   #subscribe form button {
     margin-left: 1.5em;
   }
+  #subscribe form button,
+  #subscribe form input {
+    height: 4rem;
+  }
+
+
+
 }
 /* subscribe Large Desktop */
 @media only screen and (min-width: 1300px) {
   #subscribe {
-    padding: 3.125em;
+    padding: 3.125em 0;
+  }
+  #subscribe form {
+    flex-wrap: nowrap;
   }
 }
 

@@ -10,6 +10,7 @@
     --bodyTextColor: #333333;
     --bodyTextColorWhite: #FFFFFF;
     --headerColor: #333333;
+    --max-width: 1050px;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -151,10 +152,10 @@
     color: var(--headerColor);
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     justify-content: center;
-    line-height: 1.5em;
+    line-height: 1em;
     /* 12px - 20px */
     margin-bottom: clamp(0.75rem, 1.3em, 1.25rem);
   }
