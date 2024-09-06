@@ -92,7 +92,7 @@
     padding: 0 clamp(2em, 5vw, 2.5em);
   }
   #hero .cs-container {
-    padding: clamp(7em, 27.95vw, 7.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
+    padding: clamp(7em, 27.95vw, 7.5em) 0 clamp(9em, 30.95vw, 11em) 0;
   }
   #hero .cs-flex-group {
     flex-wrap: nowrap;
