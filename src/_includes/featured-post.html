@@ -1,9 +1,9 @@
 <!--Featured-->
-  <div class="blog-featured-group">
+  <div class="news-featured-group">
     {%- for post in collections.featured | reverse -%}
-    <a class="blog-feature" href="{{ post.url }}">
+    <a class="news-feature" href="{{ post.url }}">
       {% if post.data.image %}
-        <picture class="blog-featureImage">
+        <picture class="news-featureImage">
           <img
             src="{{ post.data.image }}"
             alt="{{ post.data.imageAlt }}"
@@ -15,8 +15,8 @@
       {% endif %}
 
       <div class="content-group">
-        <h3 class="feature-h3">{{ post.data.blogTitle }}</h3>
-        <p>{{ post.data.blogDescription}}</p>{# <span class="feature-date">{{ post.date | postDate }}</span> #}
+        <h3 class="feature-h3">{{ post.data.newsTitle }} old: {{ post.data.blogTitle }}</h3>
+        <p>{{ post.data.newsDescription}}</p>{# <span class="feature-date">{{ post.date | postDate }}</span> #}
       </div>
     </a>
     {%- endfor -%}

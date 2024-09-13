@@ -2,11 +2,11 @@
 layout: 'base.html'
 preloadCSS: '/css/blog.css'
 eleventyComputed:
-    description: '{{ blogDescription }}'
-    metaTitle: '{{ blogTitle }}'
+    description: '{{ newsDescription }}'
+    metaTitle: '{{ newsTitle }}'
     tagTitle: '{{ titleTag }}'
     preloadImg: '{{ image }}'
-    permalink: '/blog/{{ pageName | slug }}/index.html'
+    permalink: '/news/{{ pageName | slug }}/index.html'
 ---
 
 <!-- ============================================ -->
@@ -21,31 +21,31 @@ eleventyComputed:
 <!--              Main Blog Content               -->
 <!-- ============================================ -->
 
-<div class="blog-container main-content-wrapper">
+<div class="news-container main-content-wrapper">
     <!--Main content -->
     <div class="main-content">
         <!-- ============================================ -->
         <!--                  Blog Article                -->
         <!-- ============================================ -->
 
-        <article class="blog-article">
+        <article class="news-article">
             <!--Main Article Image-->
             {% if post.data.image %}
-                <picture class="blog-mainImage">
+                <picture class="news-mainImage">
                 <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async"/>
                 </picture>
             {% endif %}
 
             <!--Article Info-->
             <div class="article-group">
-                <h1 class="blog-h1">{{ blogTitle }}</h1>
+                <h1 class="news-h1">{{ newsTitle }}!!!</h1>
                
-                    <span aria-hidden="true" class="blog-dot"></span>
+                    <span aria-hidden="true" class="news-dot"></span>
                     <!--Blog Date-->
-                    <span class="blog-date">{{ date | postDate }}</span>
+                    <span class="news-date">{{ date | postDate }}</span>
                 </div>
             </div>
-            <section id="blog-content">
+            <section id="news-content">
                 {{ content | safe }}
             </section>
         </article>

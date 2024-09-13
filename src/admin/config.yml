@@ -4,10 +4,10 @@ backend:
 
 local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://d33wubrfki0l68.cloudfront.net/c89899bad974606ce0e0f5d5a95842dc787dcb56/7fe98/assets/images/logo-blue.png
+# logo_url: https://d33wubrfki0l68.cloudfront.net/c89899bad974606ce0e0f5d5a95842dc787dcb56/7fe98/assets/images/logo-blue.png
 
-media_folder: 'public/images/blog'
-public_folder: '/images/blog'
+media_folder: 'public/images/news'
+public_folder: '/images/news'
 
 collections:
   - name: 'news'
@@ -19,7 +19,7 @@ collections:
       - { label: 'news-and-updates', name: 'pageName', widget: 'string' }
       - { label: 'Leftie Aubé - News and Updates', name: 'newsAndUpdates', widget: 'string' }
       - { label: 'Title Tag', name: 'titleTag', widget: 'string' }
-      - { label: 'Description', name: 'blogDescription', widget: 'string' }
+      - { label: 'Description', name: 'newsDescription', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }

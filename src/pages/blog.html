@@ -24,7 +24,7 @@ eleventyNavigation:
 <!--              Main Blog Content               -->
 <!-- ============================================ -->
 
-<div class="blog-container main-content-wrapper">
+<div class="news-container main-content-wrapper">
     <!--Main content -->
     <div class="main-content">
         <!-- ============================================ -->
@@ -38,7 +38,7 @@ eleventyNavigation:
             <article class="recent-articles">
                 <!--Main Article Image-->
               {% if post.data.image %}
-                <picture class="blog-mainImage">
+                <picture class="news-mainImage">
                     <img
                         src="{{ post.data.image }}"
                         alt="{{ post.data.imageAlt }}"
@@ -51,13 +51,13 @@ eleventyNavigation:
                 <!--Article Info-->
                 <div class="article-group">
                     
-                    <h2 class="blog-h1">
-                        {{ post.data.blogTitle }}
+                    <h2 class="news-h1">
+                        {{ post.data.newsTitle }}
                     </h2>
-                    <p class="blog-desc">
-                        {{ post.data.blogDescription }}
+                    <p class="news-desc">
+                        {{ post.data.newsDescription }}
                     </p>
-                    <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                    <a href="{{ post.url }}" class="news-link">Continue Reading</a>
                 </div>
             </article>
         {%- endfor -%}

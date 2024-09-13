@@ -46,19 +46,20 @@
   }
   body,
   html {
-    margin: 0;
-    padding: 0;
+    color: var(--bodyTextColor);
     font-size: 16px;
     font-family: 'Archivo', Courier, serif;
-    color: var(--bodyTextColor);
+    margin: 0;
     overflow-x: hidden;
+    padding: 0;
+    scroll-behavior: smooth;
   }
   *,
   *:before,
   *:after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   body {
     transition: background-color 0.3s;
@@ -477,7 +478,7 @@
     color: #fff;
     transition: color .3s;
   }
-  #navigation #navbar-menu ul li a:before {
+  /* #navigation #navbar-menu ul li a:before {
     content: '';
     position: absolute;
     display: block;
@@ -493,7 +494,7 @@
   }
   #navigation #navbar-menu ul li a:hover:before {
     width: 100%;
-  }
+  } */
   #navigation #navbar-menu ul li a.active:before {
     content: '';
     position: absolute;
