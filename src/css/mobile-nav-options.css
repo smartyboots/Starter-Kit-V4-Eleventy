@@ -1,22 +1,24 @@
 /* Mobile - Top Drop Down */
 @media only screen and (max-width: 1023px) {
-  #navigation {
+  /* #navigation {
+    background-color: var(--primaryDark);
+    height: auto;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    z-index: 10000;
-    height: auto;
+    z-index: 100;
   }
   #navigation .background-color-div {
+    background-color: var(--primary);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    background-color: #fff;
     width: 100%;
-    height: 100%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
+    border: 6px solid red;
+  } */
   #navigation .container {
     padding: 0.8125em 0;
     width: 96%;

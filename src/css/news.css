@@ -3,17 +3,17 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  :root {
+  /* :root {
     --bodyHeader: #1a1a1a;
     --bodyText: #737373;
-  }
+  } */
   body,
   html,
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 100%;
+    /* font-size: 16px; */
   }
   .news-container {
     width: 94%;
@@ -21,18 +21,17 @@
     margin: auto;
   }
   .news-link {
-    font-size: 1rem;
+    /* font-size: 1rem;
     /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    /* line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-decoration: none;
     font-weight: 700;
-    text-align: center;
+    text-align: center;  */
     margin: auto;
     color: #fff;
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--bodyHeader);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     /* prevents padding from adding to the width */
@@ -50,7 +49,6 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
-    border-radius: 0.25rem;
     transition: opacity .3s;
     border: 1px solid var(--bodyHeader);
     z-index: -1;
@@ -92,19 +90,6 @@
     left: 0;
     z-index: -1;
   }
-  #header .news-bg:before {
-    /* color overlay */
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .6;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
   #header .news-bg img {
     position: absolute;
     top: 0;
@@ -119,7 +104,7 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #int-hero {
+  /* #int-hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +125,8 @@
     top: 0;
     left: 0;
     z-index: -1;
-  }
-  #int-hero h1 {
+  } */
+  /* #int-hero h1 {
     color: #fff;
     font-size: 2.13333333rem;
     text-align: center;
@@ -160,27 +145,32 @@
     margin-bottom: 1.875rem;
     display: block;
     width: 96%;
+  } */
+   
+
+  .news-featured-group a.news-feature {
+    text-decoration: none;
   }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
-  #int-hero {
+  /* #int-hero {
     font-size: 100%;
   }
   #int-hero h1 {
     font-size: 4rem;
-  }
+  } */
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-  #int-hero {
+  /* #int-hero {
     min-height: 18.75rem;
     height: auto;
     padding-top: 11.25rem;
     padding-block-end: 6.25rem;
     background-attachment: fixed;
     font-size: inherit;
-  }
+  } */
 }
 /*-- -------------------------- -->
 <---        Main Content        -->
@@ -193,17 +183,20 @@
   .main-content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    row-gap: 3.125em;
+    row-gap: 2em;
   }
   .main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     row-gap: 3.125em;
     width: 100%;
+  }
+  
+  .news-featured-group {
+    border: 1px solid var(--primaryDark);
+    padding: clamp(2em, 7vw, 4em);
   }
 }
 /* Tablet - 1024px */
@@ -227,11 +220,10 @@
     width: 100%;
   }
   .recent-articles .news-mainImage {
-    width: 100%;
+    width: auto;
     height: clamp(200px, 30vw, 400px);
     position: relative;
     display: block;
-    border-radius: 0.5em 0.5em 0 0;
     overflow: hidden;
   }
   .recent-articles .news-mainImage img {
@@ -239,9 +231,7 @@
     height: auto;
   }
   .recent-articles .article-group {
-    padding: clamp(30px, 5vw, 50px);
-    border: 1px solid #ebebeb;
-    border-radius: 0 0 0.5em 0.5em;
+    padding: 1em 0;
   }
   .recent-articles .news-author-img {
     width: 2em;
@@ -274,14 +264,14 @@
   .recent-articles .news-dot {
     width: 3px;
     height: 3px;
-    background-color: var(--primary);
+    background-color: var(--primaryDark);
     border-radius: 50%;
     display: block;
   }
   .recent-articles .news-h1 {
-    font-size: clamp(20px, 5vw, 32px);
+    /* font-size: clamp(20px, 5vw, 32px);
     line-height: 1.4em;
-    font-weight: 700;
+    font-weight: 700; */
     margin: 1rem 0;
     color: var(--bodyHeader);
   }
@@ -292,18 +282,17 @@
     color: var(--bodyText);
   }
   .recent-articles .news-link {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    /* line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-decoration: none;
     font-weight: 700;
-    text-align: center;
+    text-align: center; */
     margin: auto;
-    color: #fff;
+    color: var(--bodyTextColor);
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--bodyHeader);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     /* prevents padding from adding to the width */
@@ -311,7 +300,7 @@
     z-index: 1;
     transition: color .3s;
   }
-  .recent-articles .news-link:before {
+  /* .recent-articles .news-link:before {
     content: '';
     position: absolute;
     height: 100%;
@@ -325,7 +314,7 @@
     transition: opacity .3s;
     border: 1px solid var(--bodyHeader);
     z-index: -1;
-  }
+  } */
   .recent-articles .news-link:hover {
     color: var(--bodyHeader);
   }
@@ -341,7 +330,6 @@
   .recent-articles .news-mainImage img {
     width: 300px;
     margin-right: 2em;
-    border: 10px solid red;
   }
 
 }
@@ -352,43 +340,7 @@
     max-width: 31.25rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode .recent-articles .news-h1,
-  body.dark-mode .recent-articles .news-desc,
-  body.dark-mode .recent-articles .news-author,
-  body.dark-mode .recent-articles .news-date {
-    color: #f7f7f7;
-  }
-  body.dark-mode .news-sidebar .feature-h3,
-  body.dark-mode .news-sidebar .feature-date,
-  body.dark-mode .news-sidebar .news-header {
-    color: #f7f7f7;
-  }
-  body.dark-mode .news-sidebar .news-header:after {
-    background: var(--primary);
-  }
-  body.dark-mode .news-article .news-h1,
-  body.dark-mode .news-article .news-author,
-  body.dark-mode .news-article .news-date {
-    color: #f7f7f7;
-  }
-  body.dark-mode .news-article #news-content h2,
-  body.dark-mode .news-article #news-content h3,
-  body.dark-mode .news-article #news-content h4,
-  body.dark-mode .news-article #news-content h5,
-  body.dark-mode .news-article #news-content h6 {
-    color: #f7f7f7;
-  }
-  body.dark-mode .news-article #news-content p,
-  body.dark-mode .news-article #news-content li {
-    color: #f7f7f7;
-    opacity: .8;
-  }
-  body.dark-mode .news-article #news-content a {
-    color: #9dafe5;
-  }
-}
+
 /*-- -------------------------- -->
 <---          Sidebar           -->
 <--- -------------------------- -*/
@@ -406,7 +358,7 @@
   }
   .news-sidebar .news-featured-group {
     padding: 2.1875em 1.875em;
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--primaryDark);
     border-radius: 0.5em;
     display: flex;
     justify-content: flex-start;
@@ -441,7 +393,7 @@
     width: 100%;
     text-decoration: none;
     padding: 1.25rem 0;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid var(--primaryDarkShade);
   }
   .news-sidebar .news-feature:nth-of-type(1) {
     padding-top: 0;
@@ -663,7 +615,7 @@
     margin-bottom: 2.5rem;
     /* changes to 521px at desktop */
     max-width: 21.5rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
   }
   #cs-footer .cs-nav {
     padding: 0;
@@ -684,7 +636,7 @@
     line-height: 1.5em;
     font-weight: 700;
     margin-bottom: 1.25rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     position: relative;
     display: block;
   }
@@ -692,7 +644,7 @@
     font-size: 1rem;
     text-decoration: none;
     line-height: 1.5em;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     position: relative;
   }
   #cs-footer .cs-nav-link:before {
@@ -745,7 +697,7 @@
     transition: transform 0.3s, background-color 0.3s;
   }
   #cs-footer .cs-social-link:hover {
-    background-color: var(--primary);
+    background-color: var(--primaryDark);
     transform: translateY(-0.1875rem);
   }
   #cs-footer .cs-social-img {
