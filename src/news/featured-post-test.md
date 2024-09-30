@@ -1,10 +1,17 @@
 ---
-pageName: featured-post-test
-newsAndUpdates: Featured Post Test Title
-titleTag: Featured post test title tag
-newsDescription: I removed the featured tag from this featured post!
+pageName: upcoming-novel
+newsTitle: My Upcoming Novel!
+titleTag: My Upcoming Novel!
+newsAndUpdates: Featured Post Test 1 Title?
+newsDescription: Some more information about my upcoming novel
 date: 2024-09-17T01:31:41.404Z
 tags:
   - news
+image: /images/news/open_book.jpeg
+imageAlt: an open book
 ---
-I﻿'m testing the featured post thingy. How many can there be? I only ever want to see one. It would be best if the user didn't have to manually remove the featured tag on older posts. What to do? Well I like this music anyway, at least there's that.
+Nulla tincidunt vel eros ut facilisis. Nulla rutrum nibh augue, id tempor diam commodo at. Sed vitae pulvinar nulla. Donec vitae lacus et justo dictum porttitor. Etiam gravida non sem et consequat. Ut suscipit, est sed efficitur mollis, lorem magna hendrerit diam, quis condimentum erat dui in neque. Integer urna mauris, condimentum nec sapien eu, blandit posuere augue. In porta iaculis laoreet. Nulla sit amet pharetra elit, nec facilisis ante. 
+
+Suspendisse vel elit placerat, ornare nunc vitae, pellentesque mi. Pellentesque eget aliquam mauris. Cras a libero vel libero interdum ultricies. Sed ullamcorper eros at nulla efficitur, vitae dictum sem suscipit. Fusce posuere egestas tempor. Nulla facilisi. Morbi imperdiet metus ex, vel accumsan nibh tincidunt quis.
+
+Fusce suscipit massa vitae ex posuere, in ultrices arcu dictum. Nullam vestibulum mattis nisl, sit amet volutpat magna egestas ut. Morbi maximus justo et dignissim consequat. Pellentesque quis placerat magna, dignissim mollis sem. Mauris vitae dui lectus. Sed sodales risus quam, id pellentesque lorem accumsan in. Nunc a lacus vel nibh consequat accumsan. Donec sit amet sollicitudin tellus. Ut aliquet dui quis placerat lacinia. Nulla eget neque diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

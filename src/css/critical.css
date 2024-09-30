@@ -196,6 +196,12 @@
     margin: 1em auto;
     text-align: center;
   }
+
+  #news h3 {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+  }
+
   #news .news-featured-group a.news-feature {
     text-decoration: none;
 

@@ -1,7 +1,7 @@
 ---
 pageName: another-test-post
-newsTitle: Test Post
-titleTag: Another Test Post
+newsTitle: Test Post Title
+titleTag: Another Test Post Title Tag
 newsDescription: Here is another test post to make sure that everything is sound and smooth
 author: Joe Mendez
 date: 2022-12-16T19:45:03.587Z

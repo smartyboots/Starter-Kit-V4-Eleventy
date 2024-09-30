@@ -269,29 +269,29 @@
     display: block;
   }
   .recent-articles .news-h1 {
-    /* font-size: clamp(20px, 5vw, 32px);
+    font-size: clamp(1.2em, 5vw, 1.5em);
     line-height: 1.4em;
-    font-weight: 700; */
+    font-weight: 00;
     margin: 1rem 0;
     color: var(--bodyHeader);
   }
   .recent-articles .news-desc {
     font-size: 1rem;
     line-height: 1.5em;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 .5rem;
     color: var(--bodyText);
   }
   .recent-articles .news-link {
-    /* font-size: 1rem; */
+    font-size: 1rem;
     /* 46px - 56px */
     /* line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-decoration: none;
     font-weight: 700;
     text-align: center; */
-    margin: auto;
+    /* margin: auto; */
     color: var(--bodyTextColor);
     min-width: 9.375rem;
-    padding: 0 1.5rem;
+    padding: 0;
     background-color: var(--bodyHeader);
     display: inline-block;
     position: relative;

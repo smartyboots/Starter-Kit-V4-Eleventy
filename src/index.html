@@ -66,10 +66,27 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--             News aka blog             -->
 <!-- ============================================ -->
-
+{# shows most recent post - featured post is still on blog page #}
 <section id="news">
   <h2>Current Projects</h2>
-    {% include "featured-post.html" %}
+    {%- for post in collections.post | reverse -%}
+        {% if (loop.index <= 1) %}
+
+      <article>
+         <!--Article Info-->
+          <div class="article-group">
+              <h3 class="news-h1">
+                  {{ post.data.newsTitle }}
+              </h3>
+              <p class="news-desc">
+                  {{ post.data.newsDescription }}
+              </p>
+              <a href="{{ post.url }}" class="news-link">Continue Reading</a>
+          </div>
+      </article>
+      {% endif %}
+            {%- endfor -%}
+
   </div>
 </section>
 
