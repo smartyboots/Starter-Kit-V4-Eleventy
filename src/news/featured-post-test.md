@@ -3,7 +3,12 @@ pageName: upcoming-novel
 newsTitle: My Upcoming Novel!
 titleTag: My Upcoming Novel!
 newsAndUpdates: Featured Post Test 1 Title?
-newsDescription: Some more information about my upcoming novel
+newsDescription: Some more information about my upcoming novel lets find out if
+  there's a character limit on the description. I would love it it there weren't
+  because my design accounts for a lot more text than what I would expect to put
+  in a description field. I wonder if I could turn the description in to a
+  textarea instead of text field.  Well it looks like at least we have lots of
+  characters. Hmm.
 date: 2024-09-17T01:31:41.404Z
 tags:
   - news

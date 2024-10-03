@@ -7,6 +7,7 @@
     --primary: #FFFFFF;
     --primaryShade: #4c4c4c;
     --primaryDark: #333333;
+    --primaryMidDark: #717171;
     --bodyTextColor: #333333;
     --bodyTextColorWhite: #FFFFFF;
     --headerColor: #333333;
@@ -194,6 +195,13 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+.cs-container {
+  margin: auto;
+  padding: clamp(9em, 25.95vw, 17.5em) 0;
+  position: relative;
+  max-width: 1050px;
+  width: 80vw;
 }
   
 }

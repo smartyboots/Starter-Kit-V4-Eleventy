@@ -28,13 +28,11 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- Preload -->
-        <link rel="preload" as="image" href="/assets/logo-light.png">
         <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/Archivo-Regular.ttf" crossorigin>
         <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/ArchivoBlack-Regular.ttf" crossorigin>
         
 
         <link rel="stylesheet" href="/css/root.css">
-        <link rel="stylesheet" href="/css/dark.css">
 
         <link rel="preload" as="image" href="{{ preloadImg }}"/>
 
@@ -47,7 +45,7 @@
         <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
         <title>
             {% if page.url == '/'%}
-                {{ client.name }} | {{ tagTitle }} | {{ client.address.city }}, {{ client.address.county }}
+                {{ client.name }} | {{ tagTitle }} 
             {% else %}
                 {{ tagTitle }} | {{ client.name }}
             {% endif %}
