@@ -69,7 +69,7 @@
         <script defer>
             document.addEventListener('scroll', (e) => {
                 const scroll = document.documentElement.scrollTop;
-                if (scroll >= 30) {
+                if (scroll >= 60) {
                     document
                         .querySelector('body')
                         .classList
@@ -80,7 +80,6 @@
                         .querySelector('body')
                         .classList
                         .remove('scroll')
-                        .remove('scrollcomplete')
                 }
             });
         </script>

@@ -63,6 +63,16 @@ eleventyNavigation:
       {% if (loop.index <= 1) %}
 
         <article>
+          {% if post.data.image %}
+            <picture class="news-mainImage">
+                <img
+                    src="{{ post.data.image }}"
+                    alt="{{ post.data.imageAlt }}"
+                    class="news-mainImage"
+                    decoding="async"
+               />
+            </picture>
+          {% endif %}
         <!--Article Info-->
           <div class="article-group">
             <h3 class="news-h1">

@@ -1,7 +1,7 @@
 ---
 pageName: upcoming-novel
-newsTitle: My Upcoming Novel!
-titleTag: My Upcoming Novel!
+newsTitle: My Upcoming Novel
+titleTag: The suspense is killing me!
 newsAndUpdates: Featured Post Test 1 Title?
 newsDescription: Some more information about my upcoming novel lets find out if
   there's a character limit on the description. I would love it it there weren't
@@ -12,7 +12,7 @@ newsDescription: Some more information about my upcoming novel lets find out if
 date: 2024-09-17T01:31:41.404Z
 tags:
   - news
-image: /images/news/open_book.jpeg
+image: ""
 imageAlt: an open book
 ---
 Nulla tincidunt vel eros ut facilisis. Nulla rutrum nibh augue, id tempor diam commodo at. Sed vitae pulvinar nulla. Donec vitae lacus et justo dictum porttitor. Etiam gravida non sem et consequat. Ut suscipit, est sed efficitur mollis, lorem magna hendrerit diam, quis condimentum erat dui in neque. Integer urna mauris, condimentum nec sapien eu, blandit posuere augue. In porta iaculis laoreet. Nulla sit amet pharetra elit, nec facilisis ante. 

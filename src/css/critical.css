@@ -29,9 +29,6 @@
   #hero .cs-container {
     width: 100%;
     max-width: 80em;
-    /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-    /* 144px - 280px - leaving extra space for the navigation */
-    /* changes on tablet */
     padding: clamp(5em, 25.95vw, 17.5em) 0;
     margin: auto;
     position: relative;
@@ -115,7 +112,7 @@
     margin: auto;
     max-width: var(--max-width);
     position: relative;
-    background: #fff;
+    background: var(--primary);
     padding: 2.5rem 1.5em;
     z-index: 100;
   }
@@ -192,9 +189,11 @@
 
   #news .cs-container {
     padding: clamp(1.5em, 25.95vw, 2.5em) 0;
-    /* padding-top: 40px;
-    padding-bottom: 70px; */
+  }
 
+  #news .news-mainImage img {
+    margin-bottom: 1em;
+    width: 100%;
   }
 
   #news h2 {
@@ -226,6 +225,20 @@
     color: var(--bodyTextColorWhite);
     font-weight: 900;
     text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #news article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #news .news-mainImage img {
+    margin-right: 1em;
+    margin-top: .15em;
+    max-width: 300px;
+    width: auto;
   }
 }
 
