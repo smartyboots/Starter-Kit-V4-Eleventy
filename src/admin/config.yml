@@ -17,8 +17,8 @@ collections:
     slug: '{{pageName}}'
     fields:
       - { label: 'Page-Name-with-dashes-only', name: 'pageName', widget: 'string' }
-      - { label: 'News Title', name: 'newsTitle', widget: 'string' }
-      - { label: 'Title Tag', name: 'titleTag', widget: 'string' }
+      - { label: 'Article Title', name: 'newsTitle', widget: 'string' }
+      - { label: 'Page Title', name: 'titleTag', widget: 'string', required: false }
       - { label: 'Short Description', name: 'newsDescription', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string', required: false }
       - { label: 'Date', name: 'date', widget: 'datetime' }

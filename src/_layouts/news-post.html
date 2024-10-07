@@ -1,6 +1,6 @@
 ---
 layout: 'base.html'
-preloadCSS: '/css/blog.css'
+preloadCSS: '/css/news.css'
 eleventyComputed:
     description: '{{ newsDescription }}'
     metaTitle: '{{ newsTitle }}'
@@ -14,6 +14,7 @@ eleventyComputed:
 <!-- ============================================ -->
 
 <section id="int-hero">
+  <h1>News &amp; Updates</h1>
 </section>
 
 <!-- ============================================ -->
@@ -37,23 +38,26 @@ eleventyComputed:
 
             <!--Article Info-->
             <div class="article-group">
-                <h1 class="news-h1">{{ newsTitle }}!!!</h1>
-               
-                    <span aria-hidden="true" class="news-dot"></span>
-                    <!--Blog Date-->
+                <h1 class="news-h1">{{ newsTitle }}</h1>
                     <span class="news-date">{{ date | postDate }}</span>
                 </div>
-            </div>
+
             <section id="news-content">
                 {{ content | safe }}
             </section>
+            </div>
         </article>
-    </div>
-    <!-- End .main-content -->
 
     <!-- ============================================ -->
     <!--                   Sidebar                    -->
     <!-- ============================================ -->
+    {# sidebar is hidden if there are no featured posts #}
+    {% if collections.featured.length > 0 %}
+      <div class="news-sidebar ">
+        {% include 'featured-post.html' %}
+      </div>
+    {% endif %}
+    </div>
+    <!-- End .main-content -->
 
-    {% include 'featured-post.html' %}
 </div>

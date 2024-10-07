@@ -1,7 +1,7 @@
 ---
 pageName: upcoming-novel
 newsTitle: My Upcoming Novel
-titleTag: The suspense is killing me!
+titleTag: My Upcoming Novel
 newsAndUpdates: Featured Post Test 1 Title?
 newsDescription: Some more information about my upcoming novel lets find out if
   there's a character limit on the description. I would love it it there weren't

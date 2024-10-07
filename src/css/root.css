@@ -92,6 +92,9 @@
   li {
     color: var(--primaryDark);
   }
+  a {
+    text-underline-offset: 0.25em;
+  }
   /* Button styles */
   a:hover,
   button:hover {
@@ -608,7 +611,7 @@
     font-size: 100%;
   }
   #int-hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 /* Small Desktop */
@@ -617,7 +620,7 @@
     min-height: 18.75rem;
     height: auto;
     padding-top: 2rem;
-    font-size: inherit;
+    font-size: 4rem;
   }
 }
 /*-- -------------------------- -->

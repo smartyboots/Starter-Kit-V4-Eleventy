@@ -60,8 +60,7 @@ eleventyNavigation:
   <div class="cs-container">
     <h2>Current Projects</h2>
     {%- for post in collections.post | reverse -%}
-      {% if (loop.index <= 1) %}
-
+<h3>loop index: {{loop.index}}</h3>
         <article>
           {% if post.data.image %}
             <picture class="news-mainImage">
@@ -84,7 +83,6 @@ eleventyNavigation:
             <a href="{{ post.url }}" class="news-link">Continue Reading</a>
           </div>
         </article>
-      {% endif %}
     {%- endfor -%}
   </div>
 </section>
