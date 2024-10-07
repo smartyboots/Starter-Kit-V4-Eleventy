@@ -58,9 +58,10 @@ eleventyNavigation:
 {# shows most recent post - featured post is still on blog page #}
 <section id="news">
   <div class="cs-container">
-    <h2>Current Projects</h2>
+    <a href="/news" class="cs-titleLink"><h2>Current Projects</h2></a>
     {%- for post in collections.post | reverse -%}
-<h3>loop index: {{loop.index}}</h3>
+      {% if (loop.index <= 1) %}
+
         <article>
           {% if post.data.image %}
             <picture class="news-mainImage">
@@ -83,6 +84,7 @@ eleventyNavigation:
             <a href="{{ post.url }}" class="news-link">Continue Reading</a>
           </div>
         </article>
+      {% endif %}
     {%- endfor -%}
   </div>
 </section>
@@ -102,6 +104,7 @@ eleventyNavigation:
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
+  {# netlify id widget #}
   if (window.netlifyIdentity) {
     window
       .netlifyIdentity
@@ -115,4 +118,5 @@ eleventyNavigation:
         }
       });
   }
+  
 </script>

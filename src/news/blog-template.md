@@ -8,7 +8,6 @@ author: null
 date: 2024-10-07T01:05:36.355Z
 tags:
   - news
-  - featured
 image: null
 imageAlt: optional image caption
 ---

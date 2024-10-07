@@ -196,6 +196,10 @@
     width: 100%;
   }
 
+  #news a.cs-titleLink {
+    text-decoration: none;
+  }
+
   #news h2 {
     color: var(--bodyTextColorWhite);
     font-size: clamp(2rem, 15.5vw, 2.5em);
@@ -266,6 +270,10 @@
     margin: 1em auto;
     text-align: center;
   }
+  #podcast .podcast-wrapper {
+    width: 75%;
+    max-width: 1050px;
+  }
 
 }
 /* Inbetween */
@@ -280,10 +288,6 @@
 @media only screen and (min-width: 1300px) {
   #podcast {
     padding: 3.125em;
-  }
-  #podcast .podcast-wrapper {
-    width: 75%;
-    max-width: 1050px;
   }
 }
 

@@ -186,6 +186,7 @@
     column-gap: 1.25em;
   }
   .main-content {
+    padding-right: 8em;
     width: 66%;
   }
 }
@@ -202,11 +203,12 @@
     width: 100%;
   }
   .recent-articles .news-mainImage {
-    width: auto;
-    height: clamp(200px, 30vw, 400px);
-    position: relative;
     display: block;
+    height: clamp(200px, 30vw, 400px);
+    margin-right: 1em;
     overflow: hidden;
+    position: relative;
+    width: auto;
   }
   .recent-articles .news-mainImage img {
     width: 100%;
@@ -531,7 +533,6 @@
   .news-article #news-content a {
     text-decoration: underline;
     font-size: inherit;
-    color: #fe4f70;
   }
   .news-article #news-content ul,
   .news-article #news-content ol {

@@ -22,10 +22,11 @@
         <!--Main Nav-->
         <nav id="navbar-menu" aria-label="main navigation">
           <ul>
+            
             <li>
               <a 
                 {% if entry.url == page.url %} class="active" {% endif %}
-              href="/#hero">ABOUT
+              href="/">HOME
               </a>
             </li>
 
@@ -39,14 +40,14 @@
             <li>
               <a 
                 {% if entry.url == page.url %} class="active" {% endif %}
-              href="/#podcast">PODCAST
+              href="/news">NEWS
               </a>
             </li>
 
             <li>
               <a 
                 {% if entry.url == page.url %} class="active" {% endif %}
-              href="/news">NEWS
+              href="/#podcast">PODCAST
               </a>
             </li>
             

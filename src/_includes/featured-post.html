@@ -1,4 +1,5 @@
 <!--Featured-->
+ {% if collections.featured.length <= 0 %}
   <div class="news-featured-group">
     {%- for post in collections.featured | reverse -%}
     <a class="news-feature" href="{{ post.url }}">
@@ -20,4 +21,4 @@
       </div>
     </a>
     {%- endfor -%}
-  </div>
+  </div>{% endif %}
