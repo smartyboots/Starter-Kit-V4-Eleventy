@@ -89,7 +89,8 @@
     margin: 0;
   }
   p,
-  li {
+  li, 
+  a {
     color: var(--primaryDark);
   }
   a {

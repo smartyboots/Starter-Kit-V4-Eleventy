@@ -52,7 +52,7 @@ eleventyComputed:
     <!--                   Sidebar                    -->
     <!-- ============================================ -->
     {# sidebar is hidden if there are no featured posts #}
-    {% if collections.featured.length > 0 %}
+    {% if collections.featured.length >= 0 %}
       <div class="news-sidebar ">
         {% include 'featured-post.html' %}
       </div>
