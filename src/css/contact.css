@@ -3,15 +3,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  :root {
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
-  }
+
   #cs-contact {
     font-family: 'Archivo', 'Arial', sans-serif;
     padding: var(--sectionPadding);
@@ -19,8 +11,12 @@
   #cs-contact .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
-    max-width: 50rem;
+    max-width: 45rem;
     margin: auto;
+    padding-top: 0;
+  }
+  #cs-contact .cs-container p {
+    margin-bottom: 2em;
   }
   #cs-contact .cs-content {
     width: 100%;
@@ -52,7 +48,7 @@
     height: auto;
     /* 24px - 40px top & bottom */
     /* 20px - 40px left & right */
-    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
+    /* padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem); */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -99,7 +95,7 @@
   #cs-contact .cs-container {
     max-width: 80rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     gap: 5rem;
   }
