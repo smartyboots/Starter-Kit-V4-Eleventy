@@ -58,8 +58,9 @@ eleventyNavigation:
 {# shows most recent post - featured post is still on blog page #}
 <section id="news">
   <div class="cs-container">
-    <a href="/news" class="cs-titleLink"><h2>Current Projects</h2></a>
+    <a href="/news" class="cs-titleLink"><h2>News &amp; Updates</h2></a>
     {%- for post in collections.post | reverse -%}
+    {# show most recently updated post #}
       {% if (loop.index <= 1) %}
 
         <article>
